@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tulsi ❤️ | A Surprise From Anandhu</title>
+    <meta name="description" content="A special birthday surprise for my love, Tulsi. With all my heart — Anandhu ❤️">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================== AUDIO ======================== -->
+    <audio id="bgm" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-acoustic-guitar-2423.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="clickSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-modern-click-box-check-1120.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="successSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="popSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-bubble-pop-up-alert-notification-2357.mp3"
+            type="audio/mp3">
+    </audio>
+
+    <audio id="slideshowMusic" loop>
+        <source src="love.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- =================== GLOBAL ELEMENTS =================== -->
+    <div id="hearts-container"></div>
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Music Toggle -->
+    <div id="musicToggle" class="music-toggle hidden" onclick="toggleMusic()" title="Toggle Music">
+        <span id="musicIcon">🎵</span>
+        <span id="musicStatus">Music</span>
+    </div>
+
+    <!-- Screen Progress Dots -->
+    <div id="progress-dots" class="progress-dots hidden">
+        <span class="dot active" data-screen="0"></span>
+        <span class="dot" data-screen="1"></span>
+        <span class="dot" data-screen="2"></span>
+        <span class="dot" data-screen="3"></span>
+        <span class="dot" data-screen="4"></span>
+        <span class="dot" data-screen="5"></span>
+        <span class="dot" data-screen="6"></span>
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 1: INTRO                                         -->
+    <!-- ======================================================= -->
+    <section id="screen-intro" class="screen active">
+        <div class="intro-bg-glow"></div>
+
+        <div class="card premium-card intro-card">
+            <div class="intro-emoji-float">💌</div>
+
+            <h1 class="romantic-title glow-text">Hi Tulsi ❤️</h1>
+
+            <p class="intro-subtext">
+                I made a little surprise for you…<br>
+                It’s nothing big, just something from me for you 😁❤️
+            </p>
+
+            <div class="intro-hearts-row">💕 💖 💕</div>
+
+            <button id="btn-open-surprise" class="btn btn-primary pulse-btn" onclick="startSurprise()">
+                Open Surprise 😉
+            </button>
+
+            <p class="intro-hint">~from someone who loves you a lot 🌸~</p>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 2: LOVE STORY                                    -->
+    <!-- ======================================================= -->
+    <section id="screen-story" class="screen hidden">
+        <div class="card premium-card story-card">
+
+            <div class="screen-badge">Chapter 1</div>
+
+            <h2 class="romantic-title glow-text">Our Story ✨</h2>
+
+            <div class="story-paragraph hidden-anim" id="story-1">
+
+                <p>
+                    Heyy babe 🥰❤️, it’s been 10 months since we’ve been together 🫠❤️.
+                    I don’t know how to explain my feelings 🥹. I never even expected that
+                    I’d fall in love with someone from another state 😭❤️, but somehow you
+                    became such an important part of my life 🫶🏻.
+                </p>
+
+                <p>
+                    We’ve shared so many things with each other 🥰, spent so much time
+                    together, and shared some really beautiful moments 🥹❤️. We’ve created
+                    so many memories together, and honestly, those memories mean a lot to me
+                    🫠❤️. I’m really, really happy to be with you 🥰.
+                </p>
+
+                <p>
+                    I still remember when you proposed to me that night 🥹❤️. I can still
+                    remember that feeling, and even now, thinking about it gives me
+                    butterflies 🫠🦋.
+                </p>
+
+                <p>
+                    We’ve also hurt each other sometimes 🥺, had problems, and gone through
+                    misunderstandings 😔. But yeah babe, I guess that’s also a part of what
+                    makes a relationship beautiful ❤️. We’re not perfect, and we won’t always
+                    understand each other perfectly, but what matters to me is that we still
+                    try to understand each other and stay together 🫶🏻🥹.
+                </p>
+
+                <p>
+                    Sometimes I make you hurt 🥺, and then I also get hurt and regret hurting
+                    you 😔❤️. Sometimes my overthinking and misunderstandings create problems
+                    between us 🫠, but you always handle everything so calmly and peacefully
+                    🥹. I really appreciate that about you ❤️.
+                </p>
+
+                <p>
+                    There are so many things I love about you 🥰. The way you care about me,
+                    the way you understand me, the way you make me feel, and even the little
+                    things you do for me mean more to me than you probably realize 🥹❤️.
+                </p>
+
+                <p>
+                    I’m really lucky to have you in my life 🫶🏻❤️. Having you as a part of
+                    my life is something I’m genuinely grateful for every day 🥹.
+                </p>
+
+                <p>
+                    And now, it’s your first birthday in our relationship 🥰🎂❤️. I’m gonna
+                    make something for you that I can do, and I really hope you like it 🥹.
+                    I just wanted to do something that comes from me and make you feel a
+                    little more special on your day 🫠❤️.
+                </p>
+
+
+                <p>
+                    Love you so much, dear 😘❤️🥹.
+                </p>
+
+            </div>
+
+            <button id="story-next-btn" class="btn btn-primary hidden-btn mt" onclick="goToScreen('screen-unlock')">
+                Continue 💫
+            </button>
+
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 3: TYPE TO UNLOCK                                -->
+    <!-- ======================================================= -->
+    <section id="screen-unlock" class="screen hidden">
+        <div class="card premium-card unlock-card">
+
+            <div class="screen-badge">Secret 🔐</div>
+
+            <div class="lock-icon" id="lockIcon">🔒</div>
+
+            <h2 class="romantic-title glow-text">Hey pretty soul ❤️</h2>
+
+            <p class="unlock-instruction">
+                Type <em class="hint-text">'i love u babyy'</em><br>
+                to unlock my surprise love letter 😘
+            </p>
+
+            <div class="unlock-input-wrapper">
+
+                <input type="text" id="unlockInput" class="unlock-input" placeholder="Type here baby… 💬"
+                    oninput="checkUnlockInput()" autocomplete="off" spellcheck="false" />
+
+                <div class="input-progress-bar">
+                    <div id="inputProgressFill" class="input-progress-fill"></div>
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary mt" onclick="submitUnlock()" id="unlockBtn">
+                Unlock 💖
+            </button>
+
+            <div id="unlockFeedback" class="unlock-feedback"></div>
+            <div id="heartBurst" class="heart-burst hidden"></div>
+
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 4: YES / NO GAME                                 -->
+    <!-- ======================================================= -->
+    <section id="screen-yesno" class="screen hidden">
+
+        <div class="card premium-card yesno-card">
+
+            <div class="screen-badge">Fun Time 😄</div>
+
+            <div class="question-emoji">😏❤️</div>
+
+            <h2 class="romantic-title glow-text">
+                Do you still like me? ❤️
+            </h2>
+
+            <p class="yesno-subtext">
+                Think carefully before you answer… 🤔
+            </p>
+
+            <div class="yesno-buttons">
+
+                <button id="yesBtn" class="btn btn-yes" onclick="answerYes()">
+                    YES 😍
+                </button>
+
+            </div>
+
+            <p id="yesnoFeedback" class="yesno-feedback"></p>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 5: PUZZLE GAME                                   -->
+    <!-- ======================================================= -->
+    <section id="screen-puzzle" class="screen hidden">
+
+        <div class="card premium-card puzzle-card">
+
+            <div class="screen-badge">Brain Test 🧩</div>
+
+            <h2 class="romantic-title">
+                Little Test for You 🧐
+            </h2>
+
+            <p class="puzzle-instruction">
+                Let me see how much you love me… solve this photo puzzle 🧩
+            </p>
+
+            <p class="puzzle-hint">
+                Tap two pieces to swap them!
+            </p>
+
+            <div id="puzzle-board" class="puzzle-board"></div>
+
+            <p id="puzzle-moves" class="puzzle-moves">
+                Moves: 0
+            </p>
+
+            <p id="puzzle-success-msg" class="success-msg hidden-anim mt"></p>
+
+            <button class="btn btn-primary hidden-btn mt" id="next-to-slideshow"
+                onclick="goToScreen('screen-slideshow')">
+                Done? 😁 Let’s go to the next!
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 6: MEMORY SLIDESHOW                              -->
+    <!-- ======================================================= -->
+    <section id="screen-slideshow" class="screen hidden">
+
+        <div class="card premium-card slideshow-card">
+
+            <div class="screen-badge">Memories 📸</div>
+
+            <h2 class="romantic-title glow-text">
+                Our Moments 💕
+            </h2>
+
+            <div class="slideshow-wrapper">
+
+                <div class="slideshow-container" id="slideshow-container">
+
+                    <div class="slide active-slide">
+                        <img src="images/img12.jpeg" alt="Our moment 1">
+                        <div class="slide-caption">
+                            Every second with you is special… 💕
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img2.jpeg" alt="Our moment 2">
+                        <div class="slide-caption">
+                            You make every day brighter ☀️
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img3.jpeg" alt="Our moment 3">
+                        <div class="slide-caption">
+                            Missing you is my hobby 🥺
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img4.jpeg" alt="Our moment 4">
+                        <div class="slide-caption">
+                            Together forever, my love ❤️
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img5.jpeg" alt="Our moment 5">
+                        <div class="slide-caption">
+                            lubbu Tulsi 💕
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img6.jpeg" alt="Our moment 6">
+                        <div class="slide-caption">
+                            Us, always and forever 💑
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img7.jpeg" alt="Our moment 7">
+                        <div class="slide-caption">
+                            Every photo with you is a treasure 📸
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img8.jpeg" alt="Our moment 8">
+                        <div class="slide-caption">
+                            My favourite person in the whole world 🌍
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img9.jpeg" alt="Our moment 9">
+                        <div class="slide-caption">
+                            I wish time could stop whenever I’m with you 🕰️
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img10.jpeg" alt="Our moment 10">
+                        <div class="slide-caption">
+                            You are my home, my heart 🏡❤️
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img11.jpeg" alt="Our moment 11">
+                        <div class="slide-caption">
+                            I fall for you every single day 🌹
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/img1.jpeg" alt="Our moment 12">
+                        <div class="slide-caption">
+                            My life feels complete with you 🌸
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slideshow controls -->
+                <div class="slide-dots" id="slideDots"></div>
+
+            </div>
+
+            <button class="btn btn-primary hidden-btn mt" id="next-to-final" onclick="goToScreen('screen-final')">
+                Final Surprise 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SCREEN 7: FINAL BIRTHDAY SCREEN                         -->
+    <!-- ======================================================= -->
+    <section id="screen-final" class="screen hidden">
+
+        <div class="final-bg-glow"></div>
+
+        <div class="card premium-card final-card">
+
+            <div class="birthday-cake-anim">🎂</div>
+
+            <h1 class="romantic-title glow-text super-large">
+                Happy Birthday<br>
+                My dear sweetie❤️
+            </h1>
+
+            <p class="birthday-date">
+                ✨ October 6 ✨
+            </p>
+
+            <div class="love-letter-box">
+
+                <p class="letter-line" id="ll1">
+                    You’re turning 21 this year 🥳❤️, and I just want you to take care of yourself 🫶🏻.
+                    Please always take care of your health and yourself, because your happiness and
+                    well-being will always matter to me 🥹❤️.
+                </p>
+
+                <p class="letter-line" id="ll2">
+                    Even if I didn’t exist in your life, I would always want to see you happy and
+                    healthy 🥺❤️. That’s something I’ll always wish for you, because you deserve to
+                    be happy and have a beautiful life 🫶🏻✨.
+                </p>
+
+                <p class="letter-line" id="ll3">
+                    I don’t know how long we’ll still be together 🥺, but as long as I exist in this
+                    relationship, I’ll do whatever I can to make you feel special ❤️. I’ll always
+                    try my best to make you smile, make you happy, and give you beautiful memories
+                    🥹🫶🏻.
+                </p>
+
+                <p class="letter-line" id="ll4">
+                    You deserve so many good things in life, babe ❤️. I genuinely hope you achieve
+                    everything you dream about and that you always have reasons to smile 🥰✨.
+                </p>
+
+                <p class="letter-line" id="ll5">
+                    On your 21st birthday, I’m wishing you many, many happy returns of the day 🥳🎂❤️.
+                    I just hope you get to live a life filled with happiness, peace, beautiful moments,
+                    and all the love you deserve 🥹❤️. And I hope I get to be a part of many of those
+                    beautiful moments with you 🫶🏻❤️. May this year bring you lots of happiness,
+                    success, love, and everything your heart wishes for 🥰✨.
+                </p>
+
+                <p class="letter-line" id="ll6">
+                    And no matter what happens, whenever you need someone to talk to, someone to share
+                    something with, or simply someone to be there, I’ll always be here for you 🥹❤️.
+                </p>
+
+                <p class="letter-line" id="ll7">
+                    Happy 21st birthday, my sweet tulsi 🥰🎂❤️. I hope your day is as beautiful and
+                    special as you are to me 🫠❤️.
+                </p>
+
+                <p class="letter-line" id="ll8">
+                    Love you so much, dear 😘❤️🥹.
+                </p>
+
+            </div>
+
+            <p class="signature">
+                ~ Yours forever, Babeyy ❤️ ~
+            </p>
+
+            <div class="final-actions">
+
+                <button class="btn btn-outline" onclick="goToScreen('screen-intro')">
+                    📖 Read Story Again
+                </button>
+
+                <button class="btn btn-primary" onclick="replayCelebration()">
+                    🎉 Celebrate Again!
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- NO button lives at body root — not inside any screen with CSS transform -->
+    <button id="noBtn" class="btn btn-no no-btn-root">
+        NO 😜
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
